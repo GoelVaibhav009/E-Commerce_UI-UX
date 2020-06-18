@@ -1,4 +1,4 @@
-# ecommerceuiux
+# E-Commerce App
 
 A E-Commerce UI/UX 
 
