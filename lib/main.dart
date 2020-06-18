@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'shop_list.dart';
 import 'cart_list.dart';
+import 'Screens/login_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (_) => ShopListWidget(),
+        '/': (_) => LoginPage(),
+        '/home': (_) => ShopListWidget(),
         '/cart': (_) => CartListWidget(),
       },
     );
