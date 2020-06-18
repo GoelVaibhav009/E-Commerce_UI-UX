@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'cart_list.dart';
 import 'models/shopping_cart.dart';
 import 'models/item.dart';
+import 'homedrawer.dart';
 
 class ShopListWidget extends StatefulWidget {
   @override
@@ -59,6 +60,7 @@ class _ShopListState extends State<ShopListWidget> {
         appBar: AppBar(
           title: Text("Apple Store"),
         ),
+        drawer: HomeDrawer(),
         body: GridView.count(
           childAspectRatio: width / height,
           scrollDirection: Axis.vertical,

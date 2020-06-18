@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'shop_list.dart';
+import 'cart_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +13,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ShopListWidget(),
+      initialRoute: '/',
+      routes: {
+        '/': (_) => ShopListWidget(),
+        '/cart': (_) => CartListWidget(),
+      },
     );
   }
 }
